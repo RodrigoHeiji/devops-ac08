@@ -5,10 +5,9 @@
 </div>
 
 <table class="table">
-    <tr><th>Nome do candidato</th></tr>
-    {% for candidato in candidato %}
-        <tr><td>{{ candidato.nome }}</td></tr>
-    {% endfor %}
-
+    <tr><th>Nome do candidato</th><th>Instituição</th>
+        {% for canditado in candidatos %}
+          <tr><td>{{ canditado.nome }}</td><td>{{ canditado.instituicao }}</td></tr>
+        {% endfor %}
 </table>
 {% endblock %}
